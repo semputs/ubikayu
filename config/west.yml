@@ -1,13 +1,23 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    #    - name: zmkfirmware
+    #      url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
+
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+  #    - name: ftc
+  #      url-base: https://github.com/ftc
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      #      remote: ftc
+      #      revision: mouse-ftc
+      remote: urob
+      revision: main-with-native-mouse
       import: app/west.yml
+  #      remote: zmkfirmware
+  #      revision: main
+  #      import: app/west.yml
   self:
     path: config

@@ -1,0 +1,11 @@
+file_format: "1"
+id: ubikayu
+name: ubikayu
+type: shield
+url: https://github.com/semputs/ubikayu/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
