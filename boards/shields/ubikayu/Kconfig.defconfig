@@ -1,7 +1,7 @@
 if SHIELD_UBIKAYU
 
 config ZMK_KEYBOARD_NAME
-    default "UbiKayu"
+    default "ubikayu"
 
 if ZMK_DISPLAY
 
