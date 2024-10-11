@@ -122,7 +122,7 @@
                         bindings = <
 
 &kp ESC &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp PAUSE_BREAK
-&trans  &kp LC(LA(DEL))   &henkan  &kp F13 &kp LG(SPACE) &kp K_APP      &kp LC(BSPC)    &kp MINUS   &kp TILDE   &none  &kp BSLH    &kp MINUS
+&trans  &kp LC(LA(DEL))   &kp INT5  &kp F13 &henkan &kp K_APP      &kp LC(BSPC)    &kp MINUS   &kp TILDE   &none  &kp BSLH    &kp MINUS
 &trans  &kp CAPS &none &none  &none  &sl 4 	                          &kp PSCRN &kp GRAVE &trans &trans &trans &trans
                         &trans &trans     &kp SPACE &kp BSPC    &mo 3 &trans
                         >;
@@ -158,8 +158,7 @@
 //                                                             &trans      &trans       &tog 3        &trans      &trans
 // mouse keys here: https://github.com/ftc/zmk/blob/mouse-ftc/docs/docs/behaviors/mouse-emulation.md
                         bindings = <
-//&none            &none           &none           &kp LC(LS(ESC))  &none  &tog 4   	        &none  &mkp MB1         &mmv MOVE_UP    &mkp MB2        &none  &bt BT_CLR
-&kp LANGUAGE_5  &kp LANG5   &kp LANG_ZENKAKUHANKAKU   &kp LC(LS(ESC))  &none  &tog 4   	        &none  &mkp MB1         &mmv MOVE_UP    &mkp MB2        &none  &bt BT_CLR
+&none            &none           &none           &kp LC(LS(ESC))  &none  &none   	        &none  &mkp MB1         &mmv MOVE_UP    &mkp MB2        &none  &bt BT_CLR
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &kp C_VOL_UP       &none  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none  &none
 &rgb_ug RGB_EFF  &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &kp C_VOL_DN       &none  &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4
                         &trans &trans &none  &trans  &trans
@@ -178,7 +177,7 @@
 //                                                             &trans      &trans       &tog 3        &trans      &trans
 
                         bindings = <
-&kp ESC &kp Q   &kp W   &kp E   &none   &tog 0     &none  &none   &kp Q  &kp W  &kp E  &none
+&kp ESC &kp Q   &kp W   &kp E   &none   &tog 0    &none  &none   &kp Q  &kp W  &kp E  &none
 &none   &kp A   &kp S   &kp D   &none   &kp F12    &none  &none   &kp A  &kp S  &kp D  &none
 &none   &none   &none   &none   &none   &kp F5     &none  &none   &none  &none  &none  &none
                         &none  &none   &kp SPACE  &none   &none
